@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>File metaservice description</title>
+</head>
+<body>
+	<h1>File metaservice description</h1>
+	<article>
+		<section>
+			<head>
+				<h3>User stories</h3>
+			</head>
+			<ul>
+				<li>
+					User can browse file and submit it.
+				</li>
+				<li>
+					User can see filesize.
+				</li>
+			</ul>
+		</section>
+		<section>
+			<header>
+				<p>Submit the file</p>
+
+			</header>
+					<form action="/api/upload" method="post" enctype="multipart/form-data">
+
+					
+						<label for="fileupload"> Select a file to upload</label>
+						<input  type="file" name="filename" multiple="false" required>
+						<input type="submit" value="Submit">
+					</form>
+		</section>
+	</article>
+</body>
+</html>
