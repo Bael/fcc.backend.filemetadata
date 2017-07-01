@@ -15,19 +15,18 @@
 					User can browse file and submit it.
 				</li>
 				<li>
-					User can see filesize.
+					User can see file size.
 				</li>
 			</ul>
 		</section>
 		<section>
 			<header>
 				<p>Submit the file</p>
-
 			</header>
 					<form action="/api/upload" method="post" enctype="multipart/form-data">
 
 					
-						<label for="fileupload"> Select a file to upload</label>
+						<label for="fileupload">Select a single file to upload</label>
 						<input  type="file" name="filename" multiple="false" required>
 						<input type="submit" value="Submit">
 					</form>
